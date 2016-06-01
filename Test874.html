@@ -1,0 +1,350 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="Scripts/874.css">
+
+<script type="text/javascript" src="Scripts/874.js"></script>
+<script type="text/javascript" src="Scripts/boilerplate.css"></script>
+<script type="text/javascript" src="Scripts/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="Scripts/jquery.cycle2.min.js"></script>
+<script type="text/javascript" src="Scripts/respond.min.js"></script>
+	
+</head>
+
+<body>
+<div class="gridContainer clearfix">
+      <div id="div1" class="fluid dowload">YOU CAN DOWNLOAD <a href="https://christinedenamur.bandcamp.com/yum" target="_blank" class="link">874</a> HERE</div>
+	</div>
+
+<div>
+    <img class= "a" src="Images/redwater1.jpg">
+</div>
+
+<script>
+			
+			$(window).load(function(){
+			$(document).ready(function(){
+				animateDiv();
+				
+			});
+			
+			function makeNewPosition(){
+				
+				// Get viewport dimensions (remove the dimension of the div)
+				var h = $(window).height() - 60;
+				var w = $(window).width() - 60;
+				
+				var nh = Math.floor(Math.random() * h);
+				var nw = Math.floor(Math.random() * w);
+				
+				return [nh,nw];    
+				
+			}
+			
+			function animateDiv(){
+				var newq = makeNewPosition();
+				var oldq = $('.a').offset();
+				var speed = calcSpeed([oldq.top, oldq.left], newq);
+				
+				$('.a').animate({ top: newq[0], left: newq[1] }, speed, function(){
+				  animateDiv();        
+				});
+				
+			};
+			
+			function calcSpeed(prev, next) {
+				
+				var x = Math.abs(prev[1] - next[1]);
+				var y = Math.abs(prev[0] - next[0]);
+				
+				var greatest = x > y ? x : y;
+				
+				var speedModifier = 0.1;
+			
+				var speed = Math.ceil(greatest/speedModifier);
+			
+				return speed;
+			
+			}
+			});//]]> 
+
+</script>
+
+<div>
+    <img class= "b" src="Images/mamy3.jpg">
+</div>
+<script>
+			
+			$(window).load(function(){
+			$(document).ready(function(){
+				animateDiv();
+				
+			});
+			
+			function makeNewPosition(){
+				
+				// Get viewport dimensions (remove the dimension of the div)
+				var h = $(window).height() - 50;
+				var w = $(window).width() - 50;
+				
+				var nh = Math.floor(Math.random() * h);
+				var nw = Math.floor(Math.random() * w);
+				
+				return [nh,nw];    
+				
+			}
+			
+			function animateDiv(){
+				var newq = makeNewPosition();
+				var oldq = $('.b').offset();
+				var speed = calcSpeed([oldq.top, oldq.left], newq);
+				
+				$('.b').animate({ top: newq[0], left: newq[1] }, speed, function(){
+				  animateDiv();        
+				});
+				
+			};
+			
+			function calcSpeed(prev, next) {
+				
+				var x = Math.abs(prev[1] - next[1]);
+				var y = Math.abs(prev[0] - next[0]);
+				
+				var greatest = x > y ? x : y;
+				
+				var speedModifier = 0.1;
+			
+				var speed = Math.ceil(greatest/speedModifier);
+			
+				return speed;
+			
+			}
+			});//]]> 
+
+</script>
+
+
+<div>
+    <img class= "c" src="../../Beeldmateriaal/CURTAINS/gordijnfoto's/IMG_6556.jpg">
+</div>
+
+
+<script>
+			
+			$(window).load(function(){
+			$(document).ready(function(){
+				animateDiv();
+				
+			});
+			
+			function makeNewPosition(){
+				
+				// Get viewport dimensions (remove the dimension of the div)
+				var h = $(window).height() - 80;
+				var w = $(window).width() - 80;
+				
+				var nh = Math.floor(Math.random() * h);
+				var nw = Math.floor(Math.random() * w);
+				
+				return [nh,nw];    
+				
+			}
+			
+			function animateDiv(){
+				var newq = makeNewPosition();
+				var oldq = $('.c').offset();
+				var speed = calcSpeed([oldq.top, oldq.left], newq);
+				
+				$('.c').animate({ top: newq[0], left: newq[1] }, speed, function(){
+				  animateDiv();        
+				});
+				
+			};
+			
+			function calcSpeed(prev, next) {
+				
+				var x = Math.abs(prev[2] - next[2]);
+				var y = Math.abs(prev[0] - next[0]);
+				
+				var greatest = x > y ? x : y;
+				
+				var speedModifier = 0.13;
+			
+				var speed = Math.ceil(greatest/speedModifier);
+			
+				return speed;
+			
+			}
+			});//]]> 
+
+</script>
+<script src="http://www.kirupa.com/prefixfree.min.js"></script>
+
+
+<div>
+    <img class= "a" src="Images/redwater1.jpg">
+</div>
+
+<script>
+			
+			$(window).load(function(){
+			$(document).ready(function(){
+				animateDiv();
+				
+			});
+			
+			function makeNewPosition(){
+				
+				// Get viewport dimensions (remove the dimension of the div)
+				var h = $(window).height() - 80;
+				var w = $(window).width() - 80;
+				
+				var nh = Math.floor(Math.random() * h);
+				var nw = Math.floor(Math.random() * w);
+				
+				return [nh,nw];    
+				
+			}
+			
+			function animateDiv(){
+				var newq = makeNewPosition();
+				var oldq = $('.a').offset();
+				var speed = calcSpeed([oldq.top, oldq.left], newq);
+				
+				$('.a').animate({ top: newq[0], left: newq[1] }, speed, function(){
+				  animateDiv();        
+				});
+				
+			};
+			
+			function calcSpeed(prev, next) {
+				
+				var x = Math.abs(prev[1] - next[1]);
+				var y = Math.abs(prev[0] - next[0]);
+				
+				var greatest = x > y ? x : y;
+				
+				var speedModifier = 0.1;
+			
+				var speed = Math.ceil(greatest/speedModifier);
+			
+				return speed;
+			
+			}
+			});//]]> 
+
+</script>
+
+<div>
+    <img class= "d" src="Images/6.png">
+</div>
+
+<script>
+			
+			$(window).load(function(){
+			$(document).ready(function(){
+				animateDiv();
+				
+			});
+			
+			function makeNewPosition(){
+				
+				// Get viewport dimensions (remove the dimension of the div)
+				var h = $(window).height() - 70;
+				var w = $(window).width() - 70;
+				
+				var nh = Math.floor(Math.random() * h);
+				var nw = Math.floor(Math.random() * w);
+				
+				return [nh,nw];    
+				
+			}
+			
+			function animateDiv(){
+				var newq = makeNewPosition();
+				var oldq = $('.d').offset();
+				var speed = calcSpeed([oldq.top, oldq.left], newq);
+				
+				$('.d').animate({ top: newq[0], left: newq[1] }, speed, function(){
+				  animateDiv();        
+				});
+				
+			};
+			
+			function calcSpeed(prev, next) {
+				
+				var x = Math.abs(prev[1] - next[1]);
+				var y = Math.abs(prev[0] - next[0]);
+				
+				var greatest = x > y ? x : y;
+				
+				var speedModifier = 0.1;
+			
+				var speed = Math.ceil(greatest/speedModifier);
+			
+				return speed;
+			
+			}
+			});//]]> 
+
+</script>
+
+<div>
+    <img class= "e" src="Images/0.png">
+</div>
+
+<script>
+			
+			$(window).load(function(){
+			$(document).ready(function(){
+				animateDiv();
+				
+			});
+			
+			function makeNewPosition(){
+				
+				// Get viewport dimensions (remove the dimension of the div)
+				var h = $(window).height() - 70;
+				var w = $(window).width() - 70;
+				
+				var nh = Math.floor(Math.random() * h);
+				var nw = Math.floor(Math.random() * w);
+				
+				return [nh,nw];    
+				
+			}
+			
+			function animateDiv(){
+				var newq = makeNewPosition();
+				var oldq = $('.e').offset();
+				var speed = calcSpeed([oldq.top, oldq.left], newq);
+				
+				$('.e').animate({ top: newq[0], left: newq[1] }, speed, function(){
+				  animateDiv();        
+				});
+				
+			};
+			
+			function calcSpeed(prev, next) {
+				
+				var x = Math.abs(prev[1] - next[1]);
+				var y = Math.abs(prev[0] - next[0]);
+				
+				var greatest = x > y ? x : y;
+				
+				var speedModifier = 0.1;
+			
+				var speed = Math.ceil(greatest/speedModifier);
+			
+				return speed;
+			
+			}
+			});//]]> 
+
+</script>
+
+
+</body>
+</html>
