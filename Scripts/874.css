@@ -116,8 +116,28 @@ img.e {
 	
 	position:fixed;
 	Width: 20%;
+}
+img.f {
+	
+	position:fixed;
+	Width: 20%;
     
 }
+
+img.g {
+	
+	position:fixed;
+	Width: 20%;
+    
+}
+
+img.h {
+	
+	position:fixed;
+	Width: 20%;
+    
+}
+
 #contentContainer {
 	width: 100%;  
     height: 180%;
