@@ -19,117 +19,6 @@
 	</div>
     
 <div>
-    <img class= "h" src="Images/curtains1.jpg">
-</div>
-
-<script>
-			
-			$(window).load(function(){
-			$(document).ready(function(){
-				animateDiv();
-				
-			});
-			
-			function makeNewPosition(){
-				
-				// Get viewport dimensions (remove the dimension of the div)
-				var h = $(window).height() - 90;
-				var w = $(window).width() - 90;
-				
-				var nh = Math.floor(Math.random() * h);
-				var nw = Math.floor(Math.random() * w);
-				
-				return [nh,nw];    
-				
-			}
-			
-			function animateDiv(){
-				var newq = makeNewPosition();
-				var oldq = $('.h').offset();
-				var speed = calcSpeed([oldq.top, oldq.left], newq);
-				
-				$('.h').animate({ top: newq[0], left: newq[1] }, speed, function(){
-				  animateDiv();        
-				});
-				
-			};
-			
-			function calcSpeed(prev, next) {
-				
-				var x = Math.abs(prev[1] - next[1]);
-				var y = Math.abs(prev[0] - next[0]);
-				
-				var greatest = x > y ? x : y;
-				
-				var speedModifier = 0.1;
-			
-				var speed = Math.ceil(greatest/speedModifier);
-			
-				return speed;
-			
-			}
-			});//]]> 
-
-</script>    
-    
-    
-<div>
-    <img class= "g" src="Images/curtains2.jpg">
-</div>
-
-<script>
-			
-			$(window).load(function(){
-			$(document).ready(function(){
-				animateDiv();
-				
-			});
-			
-			function makeNewPosition(){
-				
-				// Get viewport dimensions (remove the dimension of the div)
-				var h = $(window).height() - 90;
-				var w = $(window).width() - 90;
-				
-				var nh = Math.floor(Math.random() * h);
-				var nw = Math.floor(Math.random() * w);
-				
-				return [nh,nw];    
-				
-			}
-			
-			function animateDiv(){
-				var newq = makeNewPosition();
-				var oldq = $('.g').offset();
-				var speed = calcSpeed([oldq.top, oldq.left], newq);
-				
-				$('.g').animate({ top: newq[0], left: newq[1] }, speed, function(){
-				  animateDiv();        
-				});
-				
-			};
-			
-			function calcSpeed(prev, next) {
-				
-				var x = Math.abs(prev[1] - next[1]);
-				var y = Math.abs(prev[0] - next[0]);
-				
-				var greatest = x > y ? x : y;
-				
-				var speedModifier = 0.1;
-			
-				var speed = Math.ceil(greatest/speedModifier);
-			
-				return speed;
-			
-			}
-			});//]]> 
-
-</script>
-
-
-
-<div>
     <img class= "a" src="Images/web.jpg">
 </div>
 
@@ -295,7 +184,7 @@
 
 
 <div>
-    <img class= "a" src="Images/redwater1.jpg">
+    <img class= "d" src="Images/redwater1.jpg">
 </div>
 
 <script>
@@ -311,60 +200,6 @@
 				// Get viewport dimensions (remove the dimension of the div)
 				var h = $(window).height() - 80;
 				var w = $(window).width() - 80;
-				
-				var nh = Math.floor(Math.random() * h);
-				var nw = Math.floor(Math.random() * w);
-				
-				return [nh,nw];    
-				
-			}
-			
-			function animateDiv(){
-				var newq = makeNewPosition();
-				var oldq = $('.a').offset();
-				var speed = calcSpeed([oldq.top, oldq.left], newq);
-				
-				$('.a').animate({ top: newq[0], left: newq[1] }, speed, function(){
-				  animateDiv();        
-				});
-				
-			};
-			
-			function calcSpeed(prev, next) {
-				
-				var x = Math.abs(prev[1] - next[1]);
-				var y = Math.abs(prev[0] - next[0]);
-				
-				var greatest = x > y ? x : y;
-				
-				var speedModifier = 0.1;
-			
-				var speed = Math.ceil(greatest/speedModifier);
-			
-				return speed;
-			
-			}
-			});//]]> 
-
-</script>
-
-<div>
-    <img class= "d" src="Images/6.png">
-</div>
-
-<script>
-			
-			$(window).load(function(){
-			$(document).ready(function(){
-				animateDiv();
-				
-			});
-			
-			function makeNewPosition(){
-				
-				// Get viewport dimensions (remove the dimension of the div)
-				var h = $(window).height() - 70;
-				var w = $(window).width() - 70;
 				
 				var nh = Math.floor(Math.random() * h);
 				var nw = Math.floor(Math.random() * w);
@@ -403,7 +238,7 @@
 </script>
 
 <div>
-    <img class= "e" src="Images/0.png">
+    <img class= "e" src="Images/6.png">
 </div>
 
 <script>
@@ -433,6 +268,168 @@
 				var speed = calcSpeed([oldq.top, oldq.left], newq);
 				
 				$('.e').animate({ top: newq[0], left: newq[1] }, speed, function(){
+				  animateDiv();        
+				});
+				
+			};
+			
+			function calcSpeed(prev, next) {
+				
+				var x = Math.abs(prev[1] - next[1]);
+				var y = Math.abs(prev[0] - next[0]);
+				
+				var greatest = x > y ? x : y;
+				
+				var speedModifier = 0.1;
+			
+				var speed = Math.ceil(greatest/speedModifier);
+			
+				return speed;
+			
+			}
+			});//]]> 
+
+</script>
+
+<div>
+    <img class= "f" src="Images/0.png">
+</div>
+
+<script>
+			
+			$(window).load(function(){
+			$(document).ready(function(){
+				animateDiv();
+				
+			});
+			
+			function makeNewPosition(){
+				
+				// Get viewport dimensions (remove the dimension of the div)
+				var h = $(window).height() - 70;
+				var w = $(window).width() - 70;
+				
+				var nh = Math.floor(Math.random() * h);
+				var nw = Math.floor(Math.random() * w);
+				
+				return [nh,nw];    
+				
+			}
+			
+			function animateDiv(){
+				var newq = makeNewPosition();
+				var oldq = $('.f').offset();
+				var speed = calcSpeed([oldq.top, oldq.left], newq);
+				
+				$('.f').animate({ top: newq[0], left: newq[1] }, speed, function(){
+				  animateDiv();        
+				});
+				
+			};
+			
+			function calcSpeed(prev, next) {
+				
+				var x = Math.abs(prev[1] - next[1]);
+				var y = Math.abs(prev[0] - next[0]);
+				
+				var greatest = x > y ? x : y;
+				
+				var speedModifier = 0.1;
+			
+				var speed = Math.ceil(greatest/speedModifier);
+			
+				return speed;
+			
+			}
+			});//]]> 
+
+</script>
+<div>
+    <img class= "h" src="Images/curtains1.jpg">
+</div>
+
+<script>
+			
+			$(window).load(function(){
+			$(document).ready(function(){
+				animateDiv();
+				
+			});
+			
+			function makeNewPosition(){
+				
+				// Get viewport dimensions (remove the dimension of the div)
+				var h = $(window).height() - 90;
+				var w = $(window).width() - 90;
+				
+				var nh = Math.floor(Math.random() * h);
+				var nw = Math.floor(Math.random() * w);
+				
+				return [nh,nw];    
+				
+			}
+			
+			function animateDiv(){
+				var newq = makeNewPosition();
+				var oldq = $('.h').offset();
+				var speed = calcSpeed([oldq.top, oldq.left], newq);
+				
+				$('.h').animate({ top: newq[0], left: newq[1] }, speed, function(){
+				  animateDiv();        
+				});
+				
+			};
+			
+			function calcSpeed(prev, next) {
+				
+				var x = Math.abs(prev[1] - next[1]);
+				var y = Math.abs(prev[0] - next[0]);
+				
+				var greatest = x > y ? x : y;
+				
+				var speedModifier = 0.7;
+			
+				var speed = Math.ceil(greatest/speedModifier);
+			
+				return speed;
+			
+			}
+			});//]]> 
+
+</script>    
+    
+    
+<div>
+    <img class= "g" src="Images/curtains2.jpg">
+</div>
+
+<script>
+			
+			$(window).load(function(){
+			$(document).ready(function(){
+				animateDiv();
+				
+			});
+			
+			function makeNewPosition(){
+				
+				// Get viewport dimensions (remove the dimension of the div)
+				var h = $(window).height() - 90;
+				var w = $(window).width() - 90;
+				
+				var nh = Math.floor(Math.random() * h);
+				var nw = Math.floor(Math.random() * w);
+				
+				return [nh,nw];    
+				
+			}
+			
+			function animateDiv(){
+				var newq = makeNewPosition();
+				var oldq = $('.g').offset();
+				var speed = calcSpeed([oldq.top, oldq.left], newq);
+				
+				$('.g').animate({ top: newq[0], left: newq[1] }, speed, function(){
 				  animateDiv();        
 				});
 				
