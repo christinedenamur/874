@@ -3,7 +3,7 @@
    Note: Fluid media requires that you remove the media's height and width attributes from the HTML
    http://www.alistapart.com/articles/fluid-images/ 
 */
-img, object, embed, video {
+img, object, embed, video, text {
 	max-width: 100%;
 }
 
@@ -28,7 +28,52 @@ img, object, embed, video {
 */
 
 
-
+.dowload {
+font-family: 'arial', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
+  font-size: 55px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  margin-top:20%;
+  position: relative;
+  z-index: 100;
+  
+  }
+.fluid {
+	clear: both;
+	margin-left: 0%;
+	width: 100%;
+	float: left;
+	display: block;
+	postition: relative;
+	z-index: 100;
+}
+.linkchristine {
+font-family: 'Circular', Georgia, serif;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  margin-right:90%;
+  position: relative;
+  z-index: 100;
+  color: black;
+  margin-top:20%;
+  
+ 
+  }
+  
+  .linkgabriel {
+font-family: 'Circular', Georgia, serif;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  position: relative;
+  z-index: 100;
+  color: black;
+  
+  }
 #bg {
   position: fixed; 
   top: 0; 
@@ -51,6 +96,7 @@ font-family: 'arial', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
   z-index: 100;
   color: black;
   }
+  
 
 .object {
 	display: block;
@@ -93,7 +139,7 @@ font-family: 'arial', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
 }
 
 body {
-margin: 0;
+margin-top: 10px;
 padding: 0;
  
 }
@@ -314,7 +360,30 @@ font-family: 'arial', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
 }
 
 /* Mobile Layout: 480px and below. */
+  .linkchristine {
+font-family: 'Circular', Georgia, serif;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  position: relative;
+  z-index: 100;
+  color: black;
+  margin-right:40%;
+  margin-top:20%;
+  }
   
+  .linkgabriel {
+font-family: 'Circular', Georgia, serif;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  position: relative;
+  z-index: 100;
+  color: black;
+ 
+  }
   .dowload {
 font-family: 'arial', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
   font-size: 55px;
@@ -328,11 +397,11 @@ font-family: 'arial', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
   }
   .fluid {
 	clear: both;
-	margin-left: 10%;
+	margin-left: 13%;
 	width: 70%;
 	float: left;
 	display: block;
-	align-content:center;
+	text-aligne:center;
 	postition: relative;
 	z-index: 100;
 }
@@ -346,10 +415,10 @@ font-family: 'arial', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
 	float: none;
 }
 #div1 {
-}
+
 .zeroMargin_mobile {
     margin-left: 0;
-}
+
 .hide_mobile {
     display: none;
 }
@@ -357,7 +426,7 @@ font-family: 'arial', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
 
 @media only screen and (min-width: 481px) {
-	.dowload {
+	 .dowload {
 font-family: 'arial', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
   font-size: 55px;
   font-style: normal;
@@ -368,18 +437,19 @@ font-family: 'arial', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
   z-index: 100;
   text-align:center;
   }
-.fluid {
+  .fluid {
 	clear: both;
-	margin-left: 30%;
-	width: 50%;
+	margin-left: 50%;
+	width: 70%;
 	float: left;
 	display: block;
-	align-content:center;
+	text-aligne:center;
 	postition: relative;
 	z-index: 100;
 }
 .gridContainer {
 	width: 90.675%;
+	max-width: 1024px;
 	padding-left: 1.1625%;
 	padding-right: 1.1625%;
 	clear: none;
@@ -387,14 +457,39 @@ font-family: 'arial', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
 	margin-left: auto;
 }
 #div1 {
-}
+
 .zeroMargin_tablet {
     margin-left: 0;
-}
+
 .hide_tablet {
     display: none;
 }
+.linkchristine {
+font-family: 'Circular', Georgia, serif;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  position: relative;
+  z-index: 100;
+  color: black;
+  margin-right:20%;
+  margin-top:20%;
+  }
+  
+  .linkgabriel {
+font-family: 'Circular', Georgia, serif;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  position: relative;
+  z-index: 100;
+  color: black;
+  
+  }
 }
+
 
 /* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
 
@@ -411,10 +506,10 @@ font-family: 'arial', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
 	margin-left: auto;
 }
 #div1 {
-}
+
 .zeroMargin_desktop {
     margin-left: 0;
-}
+
 .hide_desktop {
     display: none;
 }
@@ -427,15 +522,110 @@ font-family: 'arial', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
   margin-top:20%;
   position: relative;
   z-index: 100;
-  
+  text-align:center;
   }
-.fluid {
+  .fluid {
 	clear: both;
-	margin-left: 0%;
-	width: 100%;
+	margin-left: 50%;
+	width: 70%;
 	float: left;
 	display: block;
+	text-aligne:center;
 	postition: relative;
 	z-index: 100;
 }
+.linkchristine {
+font-family: 'Circular', Georgia, serif;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  margin-top:20%;
+  margin-right:90%;
+  position: relative;
+  z-index: 100;
+  color: black;
+  margin-left:80%;
+ 
+  }
+  
+  .linkgabriel {
+font-family: 'Circular', Georgia, serif;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+
+  position: relative;
+  z-index: 100;
+  color: black;
+  
+  }
 }
+@media only screen and (min-width: 1050px) {
+	.gridContainer {
+	width: 60%;
+	max-width: 1580px;
+	padding-left: 0.05%;
+	padding-right: 0.05%;
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: 30%;
+}
+	#div1 {
+	color: red;
+.zeroMargin_desktop {
+    margin-left: 0;
+
+.hide_desktop {
+    display: none;
+}
+
+.linkchristine {
+font-family: 'Circular', Georgia, serif;
+  font-size: 17px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  margin-right:90%;
+  position: relative;
+  z-index: 100;
+  color: black;
+ 
+  }
+  
+  .linkgabriel {
+font-family: 'Circular', Georgia, serif;
+  font-size: 17px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  position: relative;
+  z-index: 100;
+  color: black;
+  
+  }
+  
+  .dowload {
+font-family: 'arial', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
+  font-size: 55px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  margin-top:20%;
+  position: relative;
+  z-index: 100;
+  text-align:center;
+  }
+  .fluid {
+	clear: both;
+	margin-left: 50%;
+	width: 70%;
+	float: left;
+	display: block;
+	text-aligne:center;
+	postition: relative;
+	z-index: 100;
+}
+	}
