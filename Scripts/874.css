@@ -26,7 +26,16 @@ img, object, embed, video {
 	and Golden Grid System by Joni Korpi
 	http://goldengridsystem.com/
 */
-
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  z-index: 90;
+	
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
 
 .link {
 font-family: 'arial', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
