@@ -14,9 +14,10 @@
 </head>
 
 <body>
-<audio controls autoplay loop>
+
+<audio id="audio" style="display:none;" src="Audio/belles.mp3" controls autoplay loop onloadeddata="setHalfVolume()">
   <source src="Audio/belles.ogg" type="audio/ogg">
-  <source src="Audio/belles.jpg" type="audio/mpeg">
+  <source src="Audio/belles.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
 
