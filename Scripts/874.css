@@ -26,6 +26,9 @@ img, object, embed, video {
 	and Golden Grid System by Joni Korpi
 	http://goldengridsystem.com/
 */
+
+
+
 #bg {
   position: fixed; 
   top: 0; 
@@ -152,6 +155,25 @@ img.i {
 	Width: 20%;
     
 }
+img.j {
+	
+	position:fixed;
+	Width: 20%;
+    
+}
+img.k {
+	
+	position:fixed;
+	Width: 20%;
+    
+}
+
+img.l {
+	
+	position:fixed;
+	Width: 20%;
+    
+}
 
 #contentContainer {
 	width: 100%;  
@@ -182,7 +204,51 @@ font-family: 'arial', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
   font-weight: 700;
   margin-top:20%;
   position: relative;
-  z-index: 100;
+  z-index: 100; -moz-animation-duration: 400ms;
+  -moz-animation-name: blink;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: alternate;
+  
+  -webkit-animation-duration: 400ms;
+  -webkit-animation-name: blink;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  
+  animation-duration: 400ms;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@-moz-keyframes blink {
+  from {
+    opacity: 1;
+  }
+  
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes blink {
+  from {
+    opacity: 1;
+  }
+  
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  
+  to {
+    opacity: 0;
+  }
+}
   
   }
 .fluid {
@@ -193,6 +259,51 @@ font-family: 'arial', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
 	display: block;
 	postition: relative;
 	z-index: 100;
+	 -moz-animation-duration: 400ms;
+  -moz-animation-name: blink;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: alternate;
+  
+  -webkit-animation-duration: 400ms;
+  -webkit-animation-name: blink;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  
+  animation-duration: 400ms;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@-moz-keyframes blink {
+  from {
+    opacity: 1;
+  }
+  
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes blink {
+  from {
+    opacity: 1;
+  }
+  
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  
+  to {
+    opacity: 0;
+  }
+}
 }
 
 .fluidList {
