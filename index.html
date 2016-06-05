@@ -95,6 +95,60 @@
 
 </script>
 
+
+<div>
+    <img class= "u" src="Images/li.jpg">
+</div>
+<script>
+			
+			$(window).load(function(){
+			$(document).ready(function(){
+				animateDiv();
+				
+			});
+			
+			function makeNewPosition(){
+				
+				// Get viewport dimensions (remove the dimension of the div)
+				var h = $(window).height() - 78;
+				var w = $(window).width() - 78;
+				
+				var nh = Math.floor(Math.random() * h);
+				var nw = Math.floor(Math.random() * w);
+				
+				return [nh,nw];    
+				
+			}
+			
+			function animateDiv(){
+				var newq = makeNewPosition();
+				var oldq = $('.u').offset();
+				var speed = calcSpeed([oldq.top, oldq.left], newq);
+				
+				$('.u').animate({ top: newq[0], left: newq[1] }, speed, function(){
+				  animateDiv();        
+				});
+				
+			};
+			
+			function calcSpeed(prev, next) {
+				
+				var x = Math.abs(prev[1] - next[1]);
+				var y = Math.abs(prev[0] - next[0]);
+				
+				var greatest = x > y ? x : y;
+				
+				var speedModifier = 0.1;
+			
+				var speed = Math.ceil(greatest/speedModifier);
+			
+				return speed;
+			
+			}
+			});//]]> 
+
+</script>
+
 <div>
     <img class= "b" src="Images/1.png">
 </div>
@@ -367,6 +421,60 @@
 			});//]]> 
 
 </script>
+
+<div>
+    <img class= "s" src="Images/rub.jpg">
+</div>
+<script>
+			
+			$(window).load(function(){
+			$(document).ready(function(){
+				animateDiv();
+				
+			});
+			
+			function makeNewPosition(){
+				
+				// Get viewport dimensions (remove the dimension of the div)
+				var h = $(window).height() - 85;
+				var w = $(window).width() - 85;
+				
+				var nh = Math.floor(Math.random() * h);
+				var nw = Math.floor(Math.random() * w);
+				
+				return [nh,nw];    
+				
+			}
+			
+			function animateDiv(){
+				var newq = makeNewPosition();
+				var oldq = $('.s').offset();
+				var speed = calcSpeed([oldq.top, oldq.left], newq);
+				
+				$('.s').animate({ top: newq[0], left: newq[1] }, speed, function(){
+				  animateDiv();        
+				});
+				
+			};
+			
+			function calcSpeed(prev, next) {
+				
+				var x = Math.abs(prev[1] - next[1]);
+				var y = Math.abs(prev[0] - next[0]);
+				
+				var greatest = x > y ? x : y;
+				
+				var speedModifier = 0.1;
+			
+				var speed = Math.ceil(greatest/speedModifier);
+			
+				return speed;
+			
+			}
+			});//]]> 
+
+</script>
+
 <div>
     <img class= "h" src="Images/curtains1.jpg">
 </div>
@@ -529,6 +637,60 @@
 
 </script>
 
+</script>
+<div>
+    <img class= "t" src="Images/auto.jpg">
+</div>
+<script>
+			
+			$(window).load(function(){
+			$(document).ready(function(){
+				animateDiv();
+				
+			});
+			
+			function makeNewPosition(){
+				
+				// Get viewport dimensions (remove the dimension of the div)
+				var h = $(window).height() - 65;
+				var w = $(window).width() - 65;
+				
+				var nh = Math.floor(Math.random() * h);
+				var nw = Math.floor(Math.random() * w);
+				
+				return [nh,nw];    
+				
+			}
+			
+			function animateDiv(){
+				var newq = makeNewPosition();
+				var oldq = $('.t').offset();
+				var speed = calcSpeed([oldq.top, oldq.left], newq);
+				
+				$('.t').animate({ top: newq[0], left: newq[1] }, speed, function(){
+				  animateDiv();        
+				});
+				
+			};
+			
+			function calcSpeed(prev, next) {
+				
+				var x = Math.abs(prev[1] - next[1]);
+				var y = Math.abs(prev[0] - next[0]);
+				
+				var greatest = x > y ? x : y;
+				
+				var speedModifier = 0.1;
+			
+				var speed = Math.ceil(greatest/speedModifier);
+			
+				return speed;
+			
+			}
+			});//]]> 
+
+</script>
+
 <div>
     <img class= "j" src="Images/mondredwater.jpg">
 </div>
@@ -559,6 +721,60 @@
 				var speed = calcSpeed([oldq.top, oldq.left], newq);
 				
 				$('.j').animate({ top: newq[0], left: newq[1] }, speed, function(){
+				  animateDiv();        
+				});
+				
+			};
+			
+			function calcSpeed(prev, next) {
+				
+				var x = Math.abs(prev[1] - next[1]);
+				var y = Math.abs(prev[0] - next[0]);
+				
+				var greatest = x > y ? x : y;
+				
+				var speedModifier = 0.1;
+			
+				var speed = Math.ceil(greatest/speedModifier);
+			
+				return speed;
+			
+			}
+			});//]]> 
+
+</script>
+
+
+<div>
+    <img class= "v" src="Images/zee.jpg">
+</div>
+<script>
+			
+			$(window).load(function(){
+			$(document).ready(function(){
+				animateDiv();
+				
+			});
+			
+			function makeNewPosition(){
+				
+				// Get viewport dimensions (remove the dimension of the div)
+				var h = $(window).height() - 65;
+				var w = $(window).width() - 65;
+				
+				var nh = Math.floor(Math.random() * h);
+				var nw = Math.floor(Math.random() * w);
+				
+				return [nh,nw];    
+				
+			}
+			
+			function animateDiv(){
+				var newq = makeNewPosition();
+				var oldq = $('.v').offset();
+				var speed = calcSpeed([oldq.top, oldq.left], newq);
+				
+				$('.v').animate({ top: newq[0], left: newq[1] }, speed, function(){
 				  animateDiv();        
 				});
 				
@@ -951,6 +1167,61 @@
 			});//]]> 
 
 </script>
+
+<div>
+    <img class= "w" src="Images/curtains.png">
+</div>
+<script>
+			
+			$(window).load(function(){
+			$(document).ready(function(){
+				animateDiv();
+				
+			});
+			
+			function makeNewPosition(){
+				
+				// Get viewport dimensions (remove the dimension of the div)
+				var h = $(window).height() - 70;
+				var w = $(window).width() - 70;
+				
+				var nh = Math.floor(Math.random() * h);
+				var nw = Math.floor(Math.random() * w);
+				
+				return [nh,nw];    
+				
+			}
+			
+			function animateDiv(){
+				var newq = makeNewPosition();
+				var oldq = $('.w').offset();
+				var speed = calcSpeed([oldq.top, oldq.left], newq);
+				
+				$('.w').animate({ top: newq[0], left: newq[1] }, speed, function(){
+				  animateDiv();        
+				});
+				
+			};
+			
+			function calcSpeed(prev, next) {
+				
+				var x = Math.abs(prev[1] - next[1]);
+				var y = Math.abs(prev[0] - next[0]);
+				
+				var greatest = x > y ? x : y;
+				
+				var speedModifier = 0.1;
+			
+				var speed = Math.ceil(greatest/speedModifier);
+			
+				return speed;
+			
+			}
+			});//]]> 
+
+</script>
+
+
 
 </body>
 </html>
