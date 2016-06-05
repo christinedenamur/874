@@ -688,5 +688,269 @@
 
 </script>
 
+<div>
+    <img class= "m" src="Images/c.png">
+</div>
+<script>
+			
+			$(window).load(function(){
+			$(document).ready(function(){
+				animateDiv();
+				
+			});
+			
+			function makeNewPosition(){
+				
+				// Get viewport dimensions (remove the dimension of the div)
+				var h = $(window).height() - 65;
+				var w = $(window).width() - 65;
+				
+				var nh = Math.floor(Math.random() * h);
+				var nw = Math.floor(Math.random() * w);
+				
+				return [nh,nw];    
+				
+			}
+			
+			function animateDiv(){
+				var newq = makeNewPosition();
+				var oldq = $('.m').offset();
+				var speed = calcSpeed([oldq.top, oldq.left], newq);
+				
+				$('.m').animate({ top: newq[0], left: newq[1] }, speed, function(){
+				  animateDiv();        
+				});
+				
+			};
+			
+			function calcSpeed(prev, next) {
+				
+				var x = Math.abs(prev[1] - next[1]);
+				var y = Math.abs(prev[0] - next[0]);
+				
+				var greatest = x > y ? x : y;
+				
+				var speedModifier = 0.1;
+			
+				var speed = Math.ceil(greatest/speedModifier);
+			
+				return speed;
+			
+			}
+			});//]]> 
+
+</script>
+
+<div>
+    <img class= "n" src="Images/00.png">
+</div>
+<script>
+			
+			$(window).load(function(){
+			$(document).ready(function(){
+				animateDiv();
+				
+			});
+			
+			function makeNewPosition(){
+				
+				// Get viewport dimensions (remove the dimension of the div)
+				var h = $(window).height() - 65;
+				var w = $(window).width() - 65;
+				
+				var nh = Math.floor(Math.random() * h);
+				var nw = Math.floor(Math.random() * w);
+				
+				return [nh,nw];    
+				
+			}
+			
+			function animateDiv(){
+				var newq = makeNewPosition();
+				var oldq = $('.n').offset();
+				var speed = calcSpeed([oldq.top, oldq.left], newq);
+				
+				$('.n').animate({ top: newq[0], left: newq[1] }, speed, function(){
+				  animateDiv();        
+				});
+				
+			};
+			
+			function calcSpeed(prev, next) {
+				
+				var x = Math.abs(prev[1] - next[1]);
+				var y = Math.abs(prev[0] - next[0]);
+				
+				var greatest = x > y ? x : y;
+				
+				var speedModifier = 0.1;
+			
+				var speed = Math.ceil(greatest/speedModifier);
+			
+				return speed;
+			
+			}
+			});//]]> 
+
+</script>
+
+<div>
+    <img class= "o" src="Images/mars.png">
+</div>
+<script>
+			
+			$(window).load(function(){
+			$(document).ready(function(){
+				animateDiv();
+				
+			});
+			
+			function makeNewPosition(){
+				
+				// Get viewport dimensions (remove the dimension of the div)
+				var h = $(window).height() - 65;
+				var w = $(window).width() - 65;
+				
+				var nh = Math.floor(Math.random() * h);
+				var nw = Math.floor(Math.random() * w);
+				
+				return [nh,nw];    
+				
+			}
+			
+			function animateDiv(){
+				var newq = makeNewPosition();
+				var oldq = $('.o').offset();
+				var speed = calcSpeed([oldq.top, oldq.left], newq);
+				
+				$('.o').animate({ top: newq[0], left: newq[1] }, speed, function(){
+				  animateDiv();        
+				});
+				
+			};
+			
+			function calcSpeed(prev, next) {
+				
+				var x = Math.abs(prev[1] - next[1]);
+				var y = Math.abs(prev[0] - next[0]);
+				
+				var greatest = x > y ? x : y;
+				
+				var speedModifier = 0.1;
+			
+				var speed = Math.ceil(greatest/speedModifier);
+			
+				return speed;
+			
+			}
+			});//]]> 
+
+</script>
+
+<div>
+    <img class= "p" src="Images/r.png">
+</div>
+<script>
+			
+			$(window).load(function(){
+			$(document).ready(function(){
+				animateDiv();
+				
+			});
+			
+			function makeNewPosition(){
+				
+				// Get viewport dimensions (remove the dimension of the div)
+				var h = $(window).height() - 65;
+				var w = $(window).width() - 65;
+				
+				var nh = Math.floor(Math.random() * h);
+				var nw = Math.floor(Math.random() * w);
+				
+				return [nh,nw];    
+				
+			}
+			
+			function animateDiv(){
+				var newq = makeNewPosition();
+				var oldq = $('.p').offset();
+				var speed = calcSpeed([oldq.top, oldq.left], newq);
+				
+				$('.p').animate({ top: newq[0], left: newq[1] }, speed, function(){
+				  animateDiv();        
+				});
+				
+			};
+			
+			function calcSpeed(prev, next) {
+				
+				var x = Math.abs(prev[1] - next[1]);
+				var y = Math.abs(prev[0] - next[0]);
+				
+				var greatest = x > y ? x : y;
+				
+				var speedModifier = 0.1;
+			
+				var speed = Math.ceil(greatest/speedModifier);
+			
+				return speed;
+			
+			}
+			});//]]> 
+
+</script>
+<div>
+    <img class= "q" src="Images/verr.jpg">
+</div>
+<script>
+			
+			$(window).load(function(){
+			$(document).ready(function(){
+				animateDiv();
+				
+			});
+			
+			function makeNewPosition(){
+				
+				// Get viewport dimensions (remove the dimension of the div)
+				var h = $(window).height() - 65;
+				var w = $(window).width() - 65;
+				
+				var nh = Math.floor(Math.random() * h);
+				var nw = Math.floor(Math.random() * w);
+				
+				return [nh,nw];    
+				
+			}
+			
+			function animateDiv(){
+				var newq = makeNewPosition();
+				var oldq = $('.q').offset();
+				var speed = calcSpeed([oldq.top, oldq.left], newq);
+				
+				$('.q').animate({ top: newq[0], left: newq[1] }, speed, function(){
+				  animateDiv();        
+				});
+				
+			};
+			
+			function calcSpeed(prev, next) {
+				
+				var x = Math.abs(prev[1] - next[1]);
+				var y = Math.abs(prev[0] - next[0]);
+				
+				var greatest = x > y ? x : y;
+				
+				var speedModifier = 0.1;
+			
+				var speed = Math.ceil(greatest/speedModifier);
+			
+				return speed;
+			
+			}
+			});//]]> 
+
+</script>
+
 </body>
 </html>
